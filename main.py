@@ -1,12 +1,14 @@
 import sys
 from automata import *
-import cellpylib as cpl
+from screen import Screen
 
 def main():
     rule = int(sys.argv[1])
     automaton = Automaton(rule)
-    automaton.create()
-    automaton.animation()
+    cells = automaton.create()
+    # automaton.animation() leave annimation out of terminal display for now
+    screen = Screen(cells)
+    print(screen.render())
     
 
 if __name__ == "__main__":
