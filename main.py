@@ -5,8 +5,9 @@ import cellpylib as cpl
 def main():
     rule = int(sys.argv[1])
     automaton = Automaton(rule)
-    automaton = automaton.create()
-    cpl.plot(automaton)
+    automaton.create()
+    automaton.animation()
+    
 
 if __name__ == "__main__":
     main()
