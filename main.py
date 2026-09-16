@@ -3,12 +3,15 @@ from automata import *
 from screen import Screen
 
 def main():
-    rule = int(sys.argv[1])
-    automaton = Automaton(rule)
+    input = sys.argv
+    rule = int(input[1])
+    timestep = int(input[2]) #Take intput from user
+    automaton = Automaton(rule, timestep)
     cells = automaton.create()
     # automaton.animation() leave annimation out of terminal display for now
     screen = Screen(cells)
-    print(screen.render())
+    screen.animate()
+    # print(screen.render())
     
 
 if __name__ == "__main__":
