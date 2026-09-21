@@ -4,9 +4,9 @@ import cellpylib as cpl
 
 class Automaton:
     def __init__(self, rule, timesteps):
-        allowed_rules = [30, 50, 70, 90]
-        if rule not in allowed_rules:
-            raise ValueError("Only 30, 50, 70, and 90 are appropriate inputs.")
+        valid_input = 0 < rule < 256
+        if not valid_input:
+            raise ValueError("Only inputs between 0 and 256 accectable")
         self.rule = rule 
         self.timesteps = timesteps
 
@@ -15,17 +15,4 @@ class Automaton:
         self.cells = cpl.evolve(self.automaton, self.timesteps, memoize=True,
                                 apply_rule=lambda n, c, t: cpl.nks_rule(n, self.rule))
         return self.cells
-
-    # def plot(self.cells) -> None:
-    #     cpl.plot(self.cells)
-    # def animation(self):
-    #     fig, ax = plt.subplots()
-    #     mat = ax.matshow(self.cells, cmap='binary')
-    #     plt.axis('off')
-
-    #     def animate(i):
-    #         mat.set_data(self.cells[:i+1])
-    #         return [mat]
-    #     ani = animation.FuncAnimation(fig, animate, frames = 30, interval = 50,
-    #                                   blit = True, repeat=False)
-    #     plt.show()
+    

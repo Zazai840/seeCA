@@ -10,7 +10,9 @@ def main():
     cells = automaton.create()
     # automaton.animation() leave annimation out of terminal display for now
     screen = Screen(cells)
-    screen.animate()
+    screen.turn_to_frames()
+    screen.display_frames_pretty()
+
     # print(screen.render())
     
 
