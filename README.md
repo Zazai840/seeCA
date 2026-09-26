@@ -4,6 +4,7 @@ The purpose of this project is to produce simple, one dimensional Cellular Autom
 ## Installation 
 ```bash
 git clone https://github.com/Zazai840/seeCA
+cd seeCA
 ```
 Then run the requirments. 
 
