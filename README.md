@@ -4,7 +4,15 @@ The purpose of this project is to produce simple, one dimensional Cellular Autom
 ## Installation 
 ```bash
 git clone https://github.com/Zazai840/seeCA
+```
+Then move into the root directory of the project. 
+```bash
 cd seeCA
+```
+Once you are in the directory, give ./requirements file permission to run. 
+
+```bash
+chmod +x requirements.sh
 ```
 Then run the requirments. 
 
