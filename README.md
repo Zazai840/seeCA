@@ -9,16 +9,12 @@ Then move into the root directory of the project.
 ```bash
 cd seeCA
 ```
-Once you are in the directory, give ./requirements file permission to run. 
+Once you are in the directory, install requirements. 
 
 ```bash
-chmod +x requirements.sh
+python3 -m pip install -r requirements.txt
 ```
-Then run the requirments. 
-
-```bash
-./requirements.sh
-```
+You may need to start a [virtual environment][https://docs.python.org/3/library/venv.html#creating-virtual-environments] before you install this projects requirements. 
 
 ## Usage 
 In the virtual environment, run in terminal:
