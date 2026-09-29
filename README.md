@@ -14,7 +14,7 @@ Once you are in the directory, install requirements.
 ```bash
 python3 -m pip install -r requirements.txt
 ```
-You may need to start a [virtual environment][https://docs.python.org/3/library/venv.html#creating-virtual-environments] before you install this projects requirements. 
+You may need to start a [virtual environment](https://docs.python.org/3/library/venv.html#creating-virtual-environments) before you install this projects requirements. 
 
 ## Usage 
 In the virtual environment, run in terminal:
